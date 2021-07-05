@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<title> FORMULARIO </title>
+	</head>
+
+	<body>
+
+		<form action="dados.php" name="formulario" method="post">
+
+			Nome: 
+			<input name="nome" type="text"><br>
+
+			Sexo: 
+			<input name="sexo" type="radio" value="masculino">masculino</>
+			<input name="sexo" type="radio" value="feminino">feminino</><br>
+
+			Cor dos Olhos: 
+			<select name="olho">
+				  <option value="castanho">Castanho</option><br>
+				  <option value="azul">Azul</option><br>
+				  <option value="verde">Verde</option><br>
+				  <option value="preto">Preto</option><br>
+			</select><br>
+
+			Marque as opções que se aplicam a você: <br/>
+			<input type="checkbox" name="check[]" value="Altura acima de 2 metros">Altura acima de 2 metros.<br>
+			<input type="checkbox" name="check[]" value="Peso acima dos 120 kg">Peso acima dos 120 kg. <br>
+
+			Descreva sua habilidade atlética: 
+			<textarea name="texto" rows=12 cols=40></textarea><br>
+
+			<input name="btnenviar" type="submit" value="Botão Enviar">
+		</form>
+	</body>
+</html>
